@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<head>
+<title>Lizbona w 14 dni</title>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+		<div class="container">
+			<h1 class="bg-primary">Lisbon in 14 days</h1>
+			<p><mark>hichhiking</mark> trip.</p> 
+				  <div class="col-sm-2">
+				  <nav class="navbar">
+						  <div class="container-fluid">
+							<div class="navbar-header">
+							  <a class="navbar-brand" href="#">Menu</a>
+							</div>
+							<ul class="nav navbar-nav">
+							  <li class="active"><a href="index.html">Home</a></li>
+							  <li><a href="company.html">Company</a></li>
+							  <li><a href="about.html">Page 2</a></li>
+							  <li><a href="note.html">Leave a note</a></li>
+							</ul>
+						  </div>
+				  </nav>
+
+				  </div>
+
+				<div class="col-sm-8">
+				  
+				  <h2>Company</h2>
+					  <table class="table table-bordered table-responsive">
+						<thead>
+								  <tr class="text-primary success">
+									<th></th>
+									<th>Name</th>
+									<th>Surname</th>
+									<th>Website</th>
+								  </tr>
+						</thead>
+						<tbody>
+								  <tr>
+									<td><img src="photos/nela.jpg" class="img-thumbnail" alt="Nela-photo" width="120" height="120"></td>
+									<td>Nela</td>
+									<td>Sapinska</td>
+									<td>john@example.com</td>
+								  </tr>
+								  <tr>
+									<td><img src="photos/klaudia.jpg" class="img-thumbnail" alt="Klaudia-photo" width="120" height="120"></td>
+									<td>Klaudia</td>
+									<td>Gurdzińska</td>
+									<td>mary@example.com</td>
+								  </tr>
+								  <tr>
+									<td><img src="photos/paula.jpg" class="img-thumbnail" alt="Paula-photo" width="120" height="120"></td>
+									<td>Paula</td>
+									<td>Dooley</td>
+									<td>july@example.com</td>
+								  </tr>
+						</tbody>
+					  </table>
+			
+				</div>
+					  
+				<div class="col-sm-2">
+				
+						  <img id="ja" src="photos/ja.jpg" class="img-circle" alt="Cinque Terre" width="120" height="120">
+						  <p class="text-primary">Marcin Kozłowski</p>
+						  
+				</div>
+				
+				<script>
+					var window_height = $(window).height();
+					$(document).ready(function(){
+						$('.nav').affix({offset: {top: 205} }); 
+						});
+				</script>
+			  
+		</div>
+</body>
+
+
+
+</html>

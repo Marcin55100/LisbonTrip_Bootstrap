@@ -1,0 +1,38 @@
+.site-nav
+{
+background-color:gainsboro;
+}
+.enter
+{
+  height:50px;
+}
+.artistic
+{
+font-family:"Comic Sans MS";
+}
+  .affix-top
+  {
+      width: 100%;
+  }
+  .affix {
+	  top:20px;
+  }
+  .imgwrapper
+   {
+  width:100%;
+  
+  }
+  .text-temp
+  {
+	color:green;
+  
+  }
+p
+{
+font-family:"Comic Sans MS";
+}
+body
+{
+position:relative;
+}
+

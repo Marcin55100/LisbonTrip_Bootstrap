@@ -24,12 +24,24 @@ font-family:"Comic Sans MS";
   }
   .text-temp
   {
-	color:green;
+	color:black;
   
   }
+  .nav-border
+  {
+    border-bottom:#428bca solid 5px;
+    border-top:#428bca solid 5px;
+  }
+  .gray-background
+{
+  background-color: #EFF;
+}
+
+
 p
 {
 font-family:"Comic Sans MS";
+color:green;
 }
 body
 {

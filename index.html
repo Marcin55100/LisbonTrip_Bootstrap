@@ -20,14 +20,29 @@
 			var window_width = $(window).width();
 			if (window_width < 750) {
 				$('.imgwrapper').css("width", "20%");
-				//$('#ja').css("max-height","120");
-				//$('.text-temp').css("color","red");
+				$('#myName').removeClass("text-center").addClass("text-left");
 			}
 			else {
 				$('.imgwrapper').css("width", "100%");
-				//$('.text-temp').css("color","green");
+				$('#myName').removeClass("text-left").addClass("text-center");
 			}
 		}
+
+		$(window).scroll(function() {
+  			var scroll = $(window).scrollTop();
+			  	if(scroll>340)
+				  {
+					$('#scrollDays').addClass("navbar-fixed-top");
+				  }
+				  else
+				  {
+					$('#scrollDays').removeClass("navbar-fixed-top");
+				  }
+
+
+			});
+
+
 	</script>
 
 </div>
@@ -65,7 +80,7 @@
 						<li class="active"><a href="#section1">Day1</a></li>
 						<li><a href="#section2">Day2</a></li>
 						<li><a href="#section3">Day3</a></li>
-						<li><a href="#section3">Day4</a></li>
+						<li><a href="#section4">Day4</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -81,6 +96,8 @@
 
 				</article>
 			</div>
+
+
 			<div id="section1">
 				<h1 class="bg-primary">Day 1</h1>
 				<p>Cracow!</p>
@@ -90,15 +107,15 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="photos/krakow1.jpg" alt="Chania">
+							<img src="photos/krakow1.jpg" alt="krakow-photo">
 						</div>
 
 						<div class="item">
-							<img src="photos/krakow2.jpg" alt="Chania">
+							<img src="photos/krakow2.jpg" alt="krakow-photo">
 						</div>
 
 						<div class="item">
-							<img src="photos/krakow3.jpg" alt="Flower">
+							<img src="photos/krakow3.jpg" alt="krakow-photo">
 						</div>
 
 					</div>
@@ -124,6 +141,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div id="section2">
 				<h1 class="bg-primary">Day2</h1>
 				<p>Budapest!</p>
@@ -133,15 +151,15 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="photos/budapest1.jpg" alt="Chania">
+							<img src="photos/budapest1.jpg" alt="budapest-photo">
 						</div>
 
 						<div class="item">
-							<img src="photos/budapest2.jpg" alt="Chania">
+							<img src="photos/budapest2.jpg" alt="budapest-photo">
 						</div>
 
 						<div class="item">
-							<img src="photos/budapest3.jpg" alt="Flower">
+							<img src="photos/budapest3.jpg" alt="budapest-photo">
 						</div>
 
 					</div>
@@ -155,20 +173,113 @@
 											  </a>
 
 				</div>
-				<p class="enter"></p>
+
+			</div>
+
+			<div id="section3">
+				<h1 class="bg-primary">Day 3</h1>
+				<p>Vennice!</p>
+
+				<div id="myThirdCarousel" class="carousel slide">
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="photos/venice1.jpg" alt="venice photo">
+						</div>
+
+						<div class="item">
+							<img src="photos/venice2.jpg" alt="venice photo">
+						</div>
+
+						<div class="item">
+							<img src="photos/venice3.jpg" alt="venice photo">
+						</div>
+						<div class="item">
+							<img src="photos/venice4.jpg" alt="venice photo">
+						</div>
+
+					</div>
+
+					<a class="left carousel-control" href="#myThirdCarousel" role="button" data-slide="prev">
+												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											  </a>
+					<a class="right carousel-control" href="#myThirdCarousel" role="button" data-slide="next">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											  </a>
+
+				</div>
+
+				<div class="media">
+					<div class="media-left">
+						<img src="photos/nela.jpg" class="media-object" style="width:60px">
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Nela</h4>
+						<p class="text-temp">No sleep but happy as never ...</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="section4">
+				<h1 class="bg-primary">Day 4</h1>
+				<p>Barcelona!</p>
+
+				<div id="myFourthCarousel" class="carousel slide">
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="photos/barca1.jpg" alt="barca photo">
+						</div>
+
+						<div class="item">
+							<img src="photos/barca2.jpg" alt="barca photo">
+						</div>
+
+						<div class="item">
+							<img src="photos/barca3.jpg" alt="barca photo">
+						</div>
+						<div class="item">
+							<img src="photos/barca4.jpg" alt="barca photo">
+						</div>
+
+					</div>
+
+					<a class="left carousel-control" href="#myFourthCarousel" role="button" data-slide="prev">
+												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											  </a>
+					<a class="right carousel-control" href="#myFourthCarousel" role="button" data-slide="next">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											  </a>
+
+				</div>
+
+			</div>
+			
+
+
+
+			<p class="enter"></p>
 				<blockquote>
 					<p class="text-temp">I don't know if we each have a destiny or if we're just floating around accidental -</p>
 					<p class="text-temp">- like on a breeze</p>
 					<footer>Forrest Gump</footer>
 				</blockquote>
 
-			</div>
+
+
 		</div>
 		<div class="col-sm-2">
 			<div class="imgwrapper">
 				<img id="ja" src="photos/ja.jpg" class="img-circle img-responsive" alt="Cinque Terre">
 			</div>
-			<p class="text-center">Marcin Kozłowski</p>
+			<p id="myName" class="text-center">Marcin Kozłowski</p>
 
 		</div>
 	</div>
